@@ -25,7 +25,10 @@
 }
 .main{
     flex: 1 0 auto;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
+
 html{
     height: 100%;
 }
@@ -36,3 +39,649 @@ body{
     padding: 0;
     margin: 0;
 }
+
+:root {
+    --main-color: #165166;
+    --white: #FFFFFF;
+    --bright-green: #05FF00;
+    --green: #54C352;
+    --dark-lime-green: #78A677;
+    --black: #000000;
+    --red: #FF0000;
+    --light-grey: #CDCDCD;
+    --very-light-grey: #EFEFEF;
+    --grayish-red: #BCB9B9;
+    --very-dark-grey: #333333;
+}
+
+/* Typographie */
+
+.main img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.main ul {
+    list-style: none;
+}
+
+.main a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1624px;
+}
+
+section {
+    max-width: 1924px;
+    margin: 0 auto;
+}
+
+button:hover,
+button:focus {
+    cursor: pointer;
+}
+
+/* Top-section */
+
+.top-section {
+    background: var(--main-color); 
+}
+
+header,
+nav,
+.logo,
+.user-menu,
+.stars,
+.contact {
+    display: flex;
+}
+
+header {
+    justify-content: space-between;
+    text-align: center;
+    color: var(--white);
+    padding-top: 2.086875em;
+}
+
+.logo {
+    font-size: 1.875rem;
+    line-height: 36px;
+    gap: 0.6875em;
+}
+
+.logo > p {
+    margin-top: .5em;
+}
+
+nav {
+    font-size: 1.375rem;
+    gap: 1.5em;
+    padding-top: 1.038125em;
+}
+
+.user-menu {
+    gap: 2.4375em;
+}
+
+.top-content {
+    display: grid;
+    grid-template-columns: 1fr auto ;
+    margin-top: 7.3125em;
+}
+
+.left-col {
+    color: var(--white);
+    margin-top: 3em;
+}
+
+.left-col > h2 {
+    font-size: 5.125rem;
+    margin-bottom: 0;
+}
+
+.stars {
+    justify-content: space-between;
+}
+
+
+.statistics,
+.btn-group {
+    margin-left: 9.375em;
+}
+
+.main-header {
+    font-weight: 700;
+    line-height: 90px;
+    margin-top: 0;
+    margin-left: 1.82em;
+}
+
+.lime-header {
+    color: var(--bright-green);
+    line-height: 100px;
+    font-weight: 500;
+}
+
+.left-col > p {
+    max-width: 684px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 40px;
+    margin-left: 6.25em;
+}
+
+.main-photo {
+    position: relative;
+}
+
+.greenery-img {
+    position: absolute;
+    margin-top: -14.5em;
+}
+
+.right-greenery {
+    position: absolute;
+    max-width: 242px;
+    height: 820px;
+    z-index: 1;
+    margin-top: -61em;
+    margin-left: 39.1em;
+
+}
+
+.btn-group {
+    margin-top: 2.6875em;
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    font-size: 1.375rem;
+    color: var(--white);
+    font-weight: 500;
+}
+
+.shop-btn {
+    background: var(--green);
+    padding: 24px 49px;
+}
+
+.explore-btn {
+    background: none;
+    margin-left: 5em;
+}
+
+.statistics {
+    margin-top: 5.5em;
+    display: flex;
+    gap: 7.1875em;
+}
+
+.number {
+    color: var(--bright-green);
+    font-weight: 500;
+    font-size: 3.25rem;
+    margin-bottom: 0;
+}
+
+.statistics-title {
+    color: var(--very-light-grey);
+    font-size: 1.375rem;
+    margin-top: 0;
+    text-transform: capitalize;
+}
+
+.left-star {
+    margin-left: 7.312em;
+}
+
+.right-star {
+    margin-right: -2.5em;
+}
+
+.contact > p {
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-left: 4.75em;
+    margin-right: .68em;
+}
+
+.arrow {
+    display: inline-block;
+    margin-top: 1.2em;
+}
+
+.social-links {
+    font-weight: 600;
+    font-size: 3.125rem;
+    margin-left: 3.04em;
+    padding-bottom: 2.14em;
+}
+
+.s-links {
+    display: flex;
+    gap: 2.26em;
+    padding: 0;
+    margin-top: 0;
+}
+
+.s-links > li > a {
+    color: var(--dark-lime-green);
+}
+
+/* best-seller section */
+
+.seller-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seller-header > h2 {
+    font-weight: 700;
+    font-size: 3.25rem;
+    text-transform: capitalize;
+    margin-top: 0;
+    padding-top: 2.88em;
+}
+
+.seller-header > p {
+    color: var(--very-dark-grey);
+    font-weight: 500;
+    line-height: 38px;
+    font-size: 2rem;
+    max-width: 838px;
+}
+
+.best-plants {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5em;
+    color: var(--white);
+    padding-bottom: 16.75em;
+}
+
+.alocasia,
+.peace-lily,
+.camille-lily {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.alocasia-description,
+.peace-lily-description,
+.camille-lily-description {
+    background-color: var(--main-color);
+    position: relative;
+}
+
+.alocasia-photo, 
+.peace-lily-photo,
+.camille-lily-photo {
+    position: absolute;
+    z-index: 1;
+}
+
+.alocasia {
+    align-items: flex-start;
+}
+
+.alocasia-description {
+    max-width: 500px;
+    top: 10em;
+    border-radius: 10px;
+}
+
+.alocasia-photo {
+    max-width: 395px;
+}
+
+.alocasia-description > h3 {
+    font-size: 1.875rem;
+    padding-top: 5.7em;
+    text-transform: uppercase;
+}
+
+.alocasia-description > p {
+    padding: 0 1.9em;
+    font-size: 1.25rem;
+    color: var(--light-grey);
+}
+
+.add-to-cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2.9375em;
+    margin-right: 4em;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+    color: var(--red);
+    border-radius: 25px;
+    width: 140px;
+    height: 50px;
+    position: relative;
+}
+
+.price > span {
+    margin-left:  0.875em;
+}
+
+.add-btn {
+    background-color: var(--green);
+    width: 161px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 20px;
+    margin-left: 10em;
+}
+
+.peace-lily {
+    margin-top: 9.5em;
+}
+
+.peace-lily-photo {
+    max-width: 299px;
+    margin-top: -6.8em;
+}
+
+.peace-lily-description {
+    max-width: 406px;
+    margin-top: 4em;
+    border-radius: 10px;
+}
+
+.peace-lily-description > h3 {
+    font-size: 1.5rem;
+    padding-top: 7em;
+    text-transform: uppercase;
+}
+
+.peace-lily-description > p {
+    padding: 0 1.1875em;
+    color: var(--light-grey);
+    line-height: 24px;
+    padding-bottom:  5.0625em;
+}
+
+.camille-lily {
+    margin-top: 11.5em;
+}
+
+.camille-lily-photo {
+    max-width: 246px;
+}
+
+.camille-lily-description {
+    max-width: 300px;
+    max-height: 330px;
+    margin-top: 7.5em;
+    border-radius: 10px;
+}
+
+.camille-lily-description > h3 {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    padding-top: 5.5em;
+}
+
+.camille-lily-description > p {
+    padding: 0 1.5em;
+    color: var(--light-grey);
+    font-size: .75rem;
+    line-height: 20px;    
+}
+
+/*  Garden section */
+
+.garden {
+    background-color: var(--main-color);
+}
+
+.garden-content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 9.0625em;
+    align-items: center;
+}
+
+.garden-img {
+    flex: 1 100%;
+    display: flex;
+}
+
+.garden-tools {
+    max-width: 457px;
+    position: relative;
+    margin-top: 23.375em;
+}
+
+.garden-girl {
+    max-width: 565px;
+    border-radius: 282.5px;
+    position: absolute;
+    margin-top: 9.0625em;
+    margin-left: 16em;
+    z-index: 1;
+}
+
+.garden-cart {
+    position: absolute;
+    margin-top: 17.25em;
+    margin-left: 8em;
+    min-width: 299px;
+    min-height: 146px;
+    background: rgba(255, 255, 255, 0.20);
+    border-radius: 35.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2; 
+    gap: 5.132em;  
+}
+
+.top-line {
+    margin-top: .4375em;
+}
+
+.top-line,
+.bottom-line {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.line {
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    height: 6px;
+    width: 177px;
+    margin: 0;
+}
+
+.garden-info {
+    max-width: 646px;
+}
+
+.garden-info > h3 {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 3.25rem;
+    text-transform: capitalize;
+}
+
+.garden-info > p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 38px;
+    color: var(--grayish-red);
+    max-width: 583px;
+    margin-bottom: 0;
+}
+
+.view-btn {
+    color: var(--white);
+    background-color: var(--green);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.375rem;
+    font-weight: 500;
+    padding: 1.09em 2em;
+    margin-top: 3.375em;
+}
+
+
+/* Garden characteristics section */
+
+.characteristics {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15.375em;
+    padding-bottom: 11.72em;
+}
+
+.characteristics img {
+    max-width: 141px;
+}
+
+.characteristics h4 {
+    font-weight: 600;
+    font-size: 1.875rem;
+    margin-bottom: 0;
+}
+
+.characteristics p {
+    text-align: center;
+    font-size: 1.375rem;
+    margin: 0;
+    padding: 0 2.68em;
+    margin-top: 1em;
+}
+
+.quality,
+.fresh,
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 486px;
+}
+
+.quality,
+.services {
+    border-radius: 40px;
+    box-shadow: 0px 0px 4px 0px #05FF00;
+}
+
+.quality img,
+.fresh img,
+.services img {
+    padding-top: 4.1875em;
+}
+
+.quality p {
+    margin-bottom: 3.75em;
+}
+
+.fresh {
+    box-shadow: 0px 30px 50px 0px rgba(103, 117, 103, 0.05);
+    border-radius: 40px;
+}
+
+/* Plant collection section */
+
+.plant-collection {
+    background-color: var(--main-color);
+    margin-bottom: 7.8125em;
+}
+
+.collection-content,
+.collection-shop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.collection-shop {
+    flex-direction: column;
+}
+
+.collection-shop h2 {
+    color: var(--white);
+    font-weight: 600;
+    font-size: 5.125rem;
+}
+
+.shop-now-btn {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1.375rem;
+    background-color: var(--green);
+    border: none;
+    padding: 1.09em 2.227em;
+    border-radius: 5px;
+}
+
+.img-back {
+    border-radius: 238px 238px 0px 0px;
+    background-color: #DCF8EC;
+    min-width: 476px;
+    margin-top: 2.875em;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.img-back img {
+    max-width: 357px;
+    padding-top: 4.8125em;
+}
+
+ .circle {
+    background-color: var(--green);
+    min-width: 150px;
+    min-height: 150px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    margin-top: 9.5em;
+    margin-left: -4.5em;
+} 
+
+.circle-text {
+    display: block;
+    overflow: visible;
+    width: 100px;
+    font-size: 1.375rem;
+    fill: var(--white);
+  }
+  
+  .circle-text path {
+      fill: none;
+  }
+
+  .play {
+    position: absolute;
+  }
